@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bauer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        #carouselExampleAutoplaying {
+            max-width: 600px;
+            margin: 20px auto;
+            overflow: auto; /* Mantém o conteúdo contido */
+        }
+    
+        .carousel-inner {
+            height: 400px; /* Altura fixa para o container */
+        }
+    
+        .carousel-item {
+            height: 100%;
+            transition: transform 0.6s ease-in-out; /* Mantém a animação */
+        }
+    
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    
+        /* Garante a responsividade */
+        @media (max-width: 768px) {
+            .carousel-inner {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Menu -->
+    <header class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="logo">
+                <img src="./assets/logo/Bauer_v1.png" alt="Logo" class="h-10">
+            </div>
+            <!-- Nav Links -->
+            <nav class="nav-links">
+                <ul class="flex space-x-6 items-center">
+                    <li><a href="./index.html" class="hover:text-gray-400">Welcome</a></li>
+                    <li><a href="./about.html" class="hover:text-gray-400">About</a></li>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Collection
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./sweatshirt.html">Sweatshirt</a></li>
+                            <li><a class="dropdown-item" href="./hoodie.html">Hoodies</a></li>
+                            <li><a class="dropdown-item" href="./jacket.html">Jackets</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="./prints.html" class="hover:text-gray-400">Prints</a></li>
+                    <li><a href="./signin.html" class="hover:text-gray-400">Sign Up</a></li>
+                    
+
+                    <!-- Área de Pesquisa -->
+                    <li>
+                        <div class="flex items-center bg-gray-700 rounded-lg px-3 py-1">
+                            <input type="text" placeholder="Pesquisar..."
+                                class="bg-transparent text-white focus:outline-none">
+                            <button class="text-gray-400 hover:text-white ml-2">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" style="height: 550px;">
+          <div class="carousel-item active">
+            <img src="./assets/prints/71464575_0.avif" class="d-block w-100"  alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/prints/71464579_0.avif" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/prints/71464586_0.avif" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  
+       <!-- Conteúdo Principal -->
+<div class="min-h-screen flex items-center justify-center bg-gray-50 p-8">
+    <div class="text-center">
+        <h1 class="text-3xl font-bold mb-8">Qual a sua escolha?</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Sweatshirt -->
+            <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+                <img src="./assets/collection/sweatshirt.avif" alt="Sweatshirt" class="w-24 h-24 mx-auto mb-4">
+                <button onclick="window.location.href='./sweatshirt.html'" class="text-lg font-semibold bg-transparent border-none cursor-pointer">
+                    Sweatshirt
+                </button>
+            </div>
+            <!-- Hoodies -->
+            <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+                <img src="./assets/collection/hoodie.avif" alt="Hoodies" class="w-24 h-24 mx-auto mb-4">
+                <button onclick="window.location.href='./hoodie.html'" class="text-lg font-semibold bg-transparent border-none cursor-pointer">
+                    Hoodies
+                </button>
+            </div>
+            <!-- Jackets -->
+            <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+                <img src="./assets/collection/jacket.avif" alt="Jackets" class="w-24 h-24 mx-auto mb-4">
+                <button onclick="window.location.href='./jacket.html'" class="text-lg font-semibold bg-transparent border-none cursor-pointer">
+                    Jackets
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Footer -->
+<footer class="bg-gray-800 text-white py-8 mt-8">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Sobre Nós -->
+            <div class="text-center md:text-left">
+                <h3 class="text-xl font-bold mb-4">Sobre Nós</h3>
+                <p class="text-gray-400">Somos uma empresa dedicada a fornecer as melhores soluções para nossos clientes.</p>
+            </div>
+
+            <!-- Links Úteis -->
+            <div class="text-center md:text-left">
+                
+                <ul class="space-y-2">
+                    <li><a href="./index.html" class="text-gray-400 hover:text-white">Início</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Sobre</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Serviços</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="text-center md:text-right">
+                
+                <div class="social-icons flex justify-center md:justify-end space-x-6">
+                    <!-- Instagram -->
+                    <a href="https://instagram.com" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <!-- Twitter -->
+                    <a href="https://twitter.com" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <!-- TikTok -->
+                    <a href="https://tiktok.com" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-tiktok text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Direitos Autorais -->
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+            <p class="text-gray-400">&copy; 2023 Minha Empresa. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript -->
+</body>
+
+</html>

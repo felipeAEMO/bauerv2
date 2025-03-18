@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bauer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.slider {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.slide {
+    width: 400px;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain; /* Mostra imagem inteira */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.legenda {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Menu -->
+    <header class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="logo">
+                <img src="./assets/logo/Bauer_v1.png" alt="Logo" class="h-10">
+            </div>
+            <!-- Nav Links -->
+            <nav class="nav-links">
+                <ul class="flex space-x-6 items-center">
+                    <li><a href="./index.html" class="hover:text-gray-400">Welcome</a></li>
+                    <li><a href="./about.html" class="hover:text-gray-400">About</a></li>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Collection
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./sweatshirt.html">Sweatshirt</a></li>
+                            <li><a class="dropdown-item" href="./hoodie.html">Hoodies</a></li>
+                            <li><a class="dropdown-item" href="./jacket.html">Jackets</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="./prints.html" class="hover:text-gray-400">Prints</a></li>
+                    <li><a href="./signin.html" class="hover:text-gray-400">Sign Up</a></li>
+                    
+
+                    <!-- Área de Pesquisa -->
+                    <li>
+                        <div class="flex items-center bg-gray-700 rounded-lg px-3 py-1">
+                            <input type="text" placeholder="Pesquisar..."
+                                class="bg-transparent text-white focus:outline-none">
+                            <button class="text-gray-400 hover:text-white ml-2">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!-- Adicione isso ANTES da seção do slider -->
+<section class="hero">
+    <div class="hero-content">
+        <button class="cta-btn">Clique Aqui</button>
+    </div>
+</section>
+
+    <div class="container">
+        <div class="slider">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <img src="./assets/prints/71464575_0.avif">
+                <p class="legenda">Texto 1</p>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="./assets/prints/71464579_0.avif">
+                <p class="legenda">Texto 2</p>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="sua-imagem3.jpg">
+                <p class="legenda">Texto 3</p>
+            </div>
+            <div class="slide">
+                <img src="sua-imagem3.jpg">
+                <p class="legenda">Texto 3</p>
+            </div>
+            <div class="slide">
+                <img src="sua-imagem3.jpg">
+                <p class="legenda">Texto 3</p>
+            </div>
+            <div class="slide">
+                <img src="sua-imagem3.jpg">
+                <p class="legenda">Texto 3</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+<footer class="bg-gray-800 text-white py-8 mt-8">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Sobre Nós -->
+            <div class="text-center md:text-left">
+                <h3 class="text-xl font-bold mb-4">Sobre Nós</h3>
+                <p class="text-gray-400">Somos uma empresa dedicada a fornecer as melhores soluções para nossos clientes.</p>
+            </div>
+
+            <!-- Links Úteis -->
+            <div class="text-center md:text-left">
+                
+                <ul class="space-y-2">
+                    <li><a href="./index.html" class="text-gray-400 hover:text-white">Início</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Sobre</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Serviços</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="text-center md:text-right">
+                
+                <div class="social-icons flex justify-center md:justify-end space-x-6">
+                    <!-- Instagram -->
+                    <a href="https://instagram.com" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <!-- Twitter -->
+                    <a href="https://twitter.com" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <!-- TikTok -->
+                    <a href="https://tiktok.com" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-tiktok text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Direitos Autorais -->
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+            <p class="text-gray-400">&copy; 2023 Minha Empresa. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript -->
+</body>
+
+</html>

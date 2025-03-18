@@ -1,0 +1,255 @@
+/* Header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #1a1a1a;
+}
+
+.logo-img {
+    height: 40px; /* Equivalente a h-10 no Tailwind */
+}
+
+.nav-links .nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem; /* Equivalente a space-x-6 no Tailwind */
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #9ca3af; /* Equivalente a hover:text-gray-400 no Tailwind */
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    background-color: #4a5568; /* Equivalente a btn-secondary no Tailwind */
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    list-style: none;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #1a1a1a;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f3f4f6;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Área de Pesquisa */
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #4a5568; /* Equivalente a bg-gray-700 no Tailwind */
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.search-input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    color: #9ca3af; /* Equivalente a text-gray-400 no Tailwind */
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.search-btn:hover {
+    color: white;
+}
+
+
+/* Footer */
+
+/* Estilos gerais do footer */
+.footer {
+    background-color: #2d3748; /* bg-gray-800 */
+    color: white;
+    padding: 2rem 0; /* py-8 */
+    margin-top: 2rem; /* mt-8 */
+}
+
+.footer-container {
+    max-width: 1200px; /* container mx-auto */
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* grid-cols-1 */
+    gap: 2rem; /* gap-8 */
+}
+
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+    }
+}
+
+/* Sobre Nós */
+.footer-about {
+    text-align: center; /* text-center */
+}
+
+@media (min-width: 768px) {
+    .footer-about {
+        text-align: left; /* md:text-left */
+    }
+}
+
+.footer-title {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: bold; /* font-bold */
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+.footer-text {
+    color: #9ca3af; /* text-gray-400 */
+}
+
+/* Links Úteis */
+.footer-links {
+    text-align: center; /* text-center */
+}
+
+@media (min-width: 768px) {
+    .footer-links {
+        text-align: left; /* md:text-left */
+    }
+}
+
+.links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links-list li {
+    margin-bottom: 0.5rem; /* space-y-2 */
+}
+
+.footer-link {
+    color: #9ca3af; /* text-gray-400 */
+    text-decoration: none;
+    transition: color 0.3s ease; /* hover:text-white */
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+/* Redes Sociais */
+.footer-social {
+    text-align: center; /* text-center */
+}
+
+@media (min-width: 768px) {
+    .footer-social {
+        text-align: right; /* md:text-right */
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* justify-center */
+    gap: 1.5rem; /* space-x-6 */
+}
+
+@media (min-width: 768px) {
+    .social-icons {
+        justify-content: flex-end; /* md:justify-end */
+    }
+}
+
+.social-icon {
+    color: #9ca3af; /* text-gray-400 */
+    font-size: 1.5rem; /* text-2xl */
+    transition: color 0.3s ease; /* hover:text-white */
+}
+
+.social-icon:hover {
+    color: white;
+}
+
+/* Direitos Autorais */
+.footer-copyright {
+    border-top: 1px solid #4a5568; /* border-t border-gray-700 */
+    margin-top: 2rem; /* mt-8 */
+    padding-top: 2rem; /* pt-8 */
+    text-align: center; /* text-center */
+}
+
+.copyright-text {
+    color: #9ca3af; /* text-gray-400 */
+}
+
+/* CSS Adicional */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('../prints/71464587.webp') center/cover;
+}
+
+.hero-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-btn {
+    padding: 15px 40px;
+    font-size: 1.2em;
+    background: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.cta-btn:hover {
+    transform: scale(1.1);
+}
